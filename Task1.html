@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1 class="title">Responsive Image Gallery</h1>
+
+  <div class="filters">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="nature">Nature</button>
+    <button class="filter-btn" data-category="animals">Animals</button>
+  </div>
+
+  <div class="gallery">
+    <div class="image" data-category="nature">
+      <img src="https://picsum.photos/id/1015/300/200" alt="Nature">
+    </div>
+    <div class="image" data-category="animals">
+      <img src="https://picsum.photos/id/1025/300/200" alt="Animal">
+    </div>
+    <div class="image" data-category="nature">
+      <img src="https://picsum.photos/id/1016/300/200" alt="Nature">
+    </div>
+    <div class="image" data-category="animals">
+      <img src="https://picsum.photos/id/237/300/200" alt="Dog">
+    </div>
+    <div class="image" data-category="nature">
+      <img src="https://picsum.photos/id/1018/300/200" alt="Nature">
+    </div>
+    <div class="image" data-category="animals">
+      <img src="https://picsum.photos/id/1062/300/200" alt="Cat">
+    </div>
+  </div>
+
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" src="" alt="">
+    <div class="nav">
+      <span id="prev">&#10094;</span>
+      <span id="next">&#10095;</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
